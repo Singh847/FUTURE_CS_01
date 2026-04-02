@@ -1,162 +1,176 @@
-# 🔐 Vulnerability Assessment Report — DVWA (Localhost)
+# 🔐 Cyber Security Internship Portfolio — FUTURE_CS_01
 
-### Cyber Security Task 1 (2026) — Future Interns
+### Future Interns Program (2026)
 
-![Security](https://img.shields.io/badge/Security-Vulnerability%20Assessment-blue?style=flat-square)
-![OWASP](https://img.shields.io/badge/Framework-OWASP%20Top%2010%20\(2021\)-red?style=flat-square)
+![Security](https://img.shields.io/badge/Domain-Cyber%20Security-blue?style=flat-square)
+![Focus](https://img.shields.io/badge/Focus-Web%20%7C%20Phishing%20%7C%20API-orange?style=flat-square)
 ![Status](https://img.shields.io/badge/Status-Completed-green?style=flat-square)
-![Scope](https://img.shields.io/badge/Scope-Passive%20%7C%20Local%20Testing-orange?style=flat-square)
 
 ---
 
 ## 👤 Author
 
 **Sumeer Singh Rana**
-Cyber Security Task 1 (2026) — Future Interns Mentorship Program
+Cyber Security Intern — 2026
 
 ---
 
 ## 📋 Overview
 
-This repository contains a **Vulnerability Assessment Report** performed on a local instance of **Damn Vulnerable Web Application (DVWA)** hosted on:
+This repository contains a complete cybersecurity project portfolio developed during the **Future Interns Cyber Security Mentorship Program (2026)**.
 
-```
-http://127.0.0.1:42001
-```
+It covers three major areas of modern cybersecurity:
 
-The assessment was conducted in a controlled lab environment using Kali Linux. The objective was to identify security misconfigurations, weak headers, exposed services, and common vulnerabilities aligned with **OWASP Top 10 (2021)**.
+* 🔍 Web Application Security (DVWA)
+* 🎣 Phishing Detection & Awareness
+* 🔐 API Security Testing (OWASP API Top 10)
 
 ---
 
-## 📁 Repository Structure
+## 📁 Project Structure
 
-```
+```id="projstruct"
 FUTURE_CS_01/
 │
-├── 📄 README.md
+├── README.md
 │
-└── 📁 Task_1_Vulnerability_Assessment/
-    ├──zap_scan.png
-    ├── Curl.png
-    ├── dvwa_login.png
-    ├── dvwa_vulnerability.png
-    ├── Nikto.png
-    ├── Nmap.png
-    ├── security_header.png
-    ├── Whatweb.png
-    ├── alert_report.jpeg
-    ├── vulnerability.png
-    └── Vulnerability_Assessment_Report_Task1.pdf
+├── Task_1_Vulnerability_Assessment/
+├── Task_2_Phishing_Detection/
+└── Task_3_API_Security_Testing/
 ```
 
 ---
 
-## 🌐 Target Environment
+# 🔍 Task 1 — Vulnerability Assessment (DVWA)
 
-| Field           | Details                                |
-| --------------- | -------------------------------------- |
-| **Target**      | DVWA (Damn Vulnerable Web Application) |
-| **URL**         | http://127.0.0.1:42001                 |
-| **Environment** | Localhost (Kali Linux + VirtualBox)    |
-| **Type**        | Intentionally vulnerable web app       |
-| **Scope**       | Local testing only                     |
+### 📌 Description
 
----
+Performed a vulnerability assessment on **DVWA (Damn Vulnerable Web Application)** in a controlled local environment.
 
-## 🛠️ Tools Used
+### 🛠 Tools Used
 
-| Tool                    | Purpose                                |
-| ----------------------- | -------------------------------------- |
-| **Nmap**                | Port scanning & service detection      |
-| **Nikto**               | Web server vulnerability scanning      |
-| **OWASP ZAP**           | Passive scan & vulnerability detection |
-| **WhatWeb**             | Technology fingerprinting              |
-| **curl**                | Header inspection                      |
-| **Browser DevTools**    | Cookie & session analysis              |
-| **SecurityHeaders.com** | Security header grading                |
+* Nmap
+* Nikto
+* OWASP ZAP
+* WhatWeb
+* curl
+* Browser DevTools
 
----
+### 🚨 Key Findings
 
-## 🔍 Assessment Methodology
+* Missing security headers (CSP, X-Frame-Options)
+* Cookie misconfiguration
+* Server information disclosure
+* Weak configurations
 
-1. Reconnaissance (Nmap)
-2. Web Server Scanning (Nikto)
-3. Technology Detection (WhatWeb)
-4. Header Analysis (curl + DevTools)
-5. Passive Scan (OWASP ZAP)
-6. Cookie & Session Analysis
-7. Vulnerability Identification
-8. Report Generation
+### 📂 Folder
+
+```
+Task_1_Vulnerability_Assessment/
+```
 
 ---
 
-## 📊 Key Findings
+# 🎣 Task 2 — Phishing Detection & Awareness
 
-| Issue                           | Severity  |
-| ------------------------------- | --------- |
-| Missing Content-Security-Policy | 🔴 High   |
-| Missing X-Frame-Options         | 🔴 High   |
-| Missing Security Headers        | 🔴 High   |
-| Cookie without SameSite         | 🟠 Medium |
-| Server Information Disclosure   | 🟠 Medium |
-| Weak Configuration              | 🟡 Low    |
+### 📌 Description
 
----
+Analysed **5 real-world phishing email samples** to identify social engineering techniques and improve security awareness.
 
-## ⚠️ Ethical Notice
+### 🔍 Key Indicators
 
-This project was conducted:
+* Fake sender domains
+* Urgency & fear tactics
+* Suspicious links
+* Brand impersonation
 
-* ✅ On a local lab (DVWA)
-* ✅ No real system targeted
-* ✅ No illegal activity performed
-* ✅ Educational purpose only
+### 📊 Results
 
----
+* 4 Phishing Emails
+* 1 Suspicious Email
+* 29 Indicators identified
 
-## 📄 Report
+### 📂 Folder
 
-Full report available here:
-
-👉 **Vulnerability_Assessment_Report_Task1.pdf**
+```
+Task_2_Phishing_Detection/
+```
 
 ---
 
-## 📸 Evidence
+# 🔐 Task 3 — API Security Testing
 
-Includes:
+### 📌 Description
 
-* Nmap scan results
-* Nikto findings
-* OWASP ZAP alerts
-* Security headers analysis
-* Cookie inspection
-* DVWA vulnerabilities
+Conducted API security testing on:
+
+* JSONPlaceholder
+* ReqRes.in
+
+Using **OWASP API Top 10 (2023)** framework.
+
+### 🚨 Key Risks Identified
+
+* Unauthenticated API access
+* Excessive data exposure
+* Missing rate limiting
+* IDOR vulnerabilities
+* Weak authentication tokens
+
+### 📊 Summary
+
+* 9 Risks Identified
+* 3 High | 4 Medium | 2 Low
+
+### 📂 Folder
+
+```
+Task_3_API_Security_Testing/
+```
 
 ---
 
-## 📚 References
+## 🛡️ Skills Demonstrated
 
-* https://owasp.org/www-project-top-ten/
-* https://github.com/digininja/DVWA
-* https://securityheaders.com
-* https://nmap.org
-* https://owasp.org/www-project-zap/
+* Web Application Security Testing
+* Vulnerability Assessment
+* API Security Analysis
+* Phishing Detection
+* Security Tools Usage (Nmap, ZAP, Postman)
+* OWASP Top 10 & API Top 10
+
+---
+
+## ⚠️ Ethical Statement
+
+All activities were conducted:
+
+* ✅ In controlled lab environments
+* ✅ On public/demo applications
+* ✅ For educational purposes only
+
+No real systems were harmed or attacked.
+
+---
+
+## 📄 Reports Included
+
+* Vulnerability Assessment Report
+* Phishing Detection Report
+* API Security Risk Analysis Report
 
 ---
 
 ## 🎯 Conclusion
 
-This assessment demonstrates practical skills in:
+This project demonstrates practical, hands-on cybersecurity skills across multiple domains including web, human, and API security.
 
-* Web security testing
-* Vulnerability identification
-* Security misconfiguration analysis
-* Tool-based penetration testing
-
-The project highlights common real-world vulnerabilities and their detection using industry-standard tools.
+It reflects real-world security assessment workflows and industry practices.
 
 ---
 
-**📅 Date:** April 2026
-**🔒 Classification:** Educational / Lab Environment
+## ⭐ Acknowledgment
+
+Thanks to **Future Interns Program (2026)** for providing structured cybersecurity training and guidance.
+
+---
